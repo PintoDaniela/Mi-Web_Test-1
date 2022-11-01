@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Daniela Pinto</title>
+
+	  	<!--JQuery -->
+	  	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script> <!--Este es el jquery que me descargué y lo tengo en la carpeta del proyecto -->
+
+	  	<!-- Moment -->
+	  	<script type="text/javascript" src="js/moment-with-locales.js"></script>
+
+	  	<!-- Mis scripts -->
+	  	<script type="text/javascript" src="js/main.js"></script>
+
+	  	<!-- CSS -->
+	  	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>	
+	<body>
+
+		<!-- Sección global: abarca todo menos el footer. -->	
+		<section id="global">
+
+			<!--Cabecera: logo y menú -->
+			<header> 			
+				<div id="logo">
+					Daniela Pinto
+				</div>
+				<nav id="menu">
+					<ul>
+						<li><a href="index.html">INICIO</a></li>
+						<li><a href="about.html">MI CV</a></li>
+						<li><a href="calculadora.html">MIS PROYECTOS</a></li>
+						<li><a href="#footer">CONTACTO</a></li>
+					</ul>
+				</nav>			
+			</header>
+
+			<!-- Foto presentación -->
+			<div id="picture">
+				<img src="img/mi_foto2.jpg">				
+			</div>			
+			
+			<!-- Cuerpo del documento -->
+			<section id="content">				
+
+				<!-- sobre mí (post js) -->
+				<div id="posts"></div>
+
+				<!-- Barra lateral -->
+				<aside id="sidebar">
+					<!-- Div con fecha y hora -->	
+					<div id="time">
+						<div id="ahora">
+							<div id="fecha"><!-- Acá va la fecha --></div><br>
+							<div id="reloj"><!-- Acá va un reloj --></div>	
+						</div>									
+						<p>"So little time! So much to know!" <br> (Jeremy Hillary Boob, Yellow Submarine)</p>
+					</div>				
+				</aside>
+
+				<!--div celarfix. Absorbe el desbordamiento de los divs de arriba (#content y #sidebar). -->
+				<div class="clearfix"></div>
+			</section>		
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<h3>ENCONTRAME EN LAS REDES</h3>
+			<ul>
+				<li><a href="https://www.linkedin.com/in/daniela-pinto-818982137/"><img src="img/linkedin.png"></a></li>
+				<li><a href="https://github.com/DPinto90"><img src="img/GitHub.png"></a></li>
+			</ul>
+			<h3>CONTACTAME</h3>
+			<p>DANIELAFPINTO90@GMAIL.COM</p>
+			<a href="#" class="subir">Volver al comienzo</a>
+		</footer>
+
+	</body>
+</html>

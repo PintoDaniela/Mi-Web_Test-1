@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CALCULADORA JS</title>	
+
+	  	<!-- JQuery -->
+	  	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script> 
+
+	  	<!-- Moment -->
+	  	<script type="text/javascript" src="js/moment-with-locales.js"></script>
+	  	
+	  	<!-- Mis scripts -->
+	  	!--  <script type="text/javascript" src="js/calculadora.js"></script>
+	  	<script type="text/javascript" src="js/plazo_fijo.js"></script>
+
+	  	<!-- CSS -->
+	  	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	  	<link rel="stylesheet" type="text/css" href="css/calculadora.css">
+	 
+	</head>	
+	<body>
+		<!-- Sección global: abarca todo menos el footer. -->
+		<section id="global">
+
+			<!--Cabecera: logo y menú -->
+			<header> 
+				<div id="logo">
+					DANIELA PINTO	
+				</div>
+				<nav id="menu">
+					<ul>
+						<li><a href="index.html">INICIO</a></li>
+						<li><a href="about.html">MI CV</a></li>
+						<li><a href="calculadora.html">MIS PROYECTOS</a></li>
+						<li><a href="#footer">CONTACTO</a></li>
+					</ul>
+				</nav>			
+			</header>
+						
+			<!-- Cuerpo del documento -->
+			<section id="content">
+
+				<!-- Contenido del cuerpo-->
+				<div id="box">
+
+					<!-- calculadora de ahorro -->
+					<h3 id="title">MI PRIMER MINI PROYECTO</h3>
+					<div class="box">
+						<div id="titulo4">Ahorro mensual</div>
+							<form action="#" method="POST" id="datos" onsubmit="return false;"> 
+								<p>
+									<br>
+									<label for="Gastos1:">Item a reducir o eliminar 1:</label>
+									<input class="text" type="text" name="Gastos1" id="Gastos1"/>
+									<br>
+								</p>
+								<p>							
+									<label for="valor1:">Ahorro mensual en pesos 1:</label>	
+									<br>											
+									<input class="number" type="number" id="valor1"/>	
+									<br>									
+								</p>
+								<p>
+									<br>
+									<label for="Gastos2:">Item a reducir o eliminar 2:</label>
+									<br>
+									<input class="text" type="text" name="Gastos2" id="Gastos2"/>	
+									<br>
+								</p>
+								<p>
+									<label for="valor2:">Ahorro mensual en pesos 2:</label>
+									<br>
+									<input class="number" type="number" id="valor2"/>
+									<br>	
+								</p>				
+								<p>
+									<br>
+									<label for="Gastos3:">Item a reducir o eliminar 3:</label>
+									<br>
+									<input class="text" type="text" name="Gastos3" id="Gastos3"/>
+									<br>
+								</p>
+								<p>
+									<label for="valor3:">Ahorro mensual en pesos 3:</label>
+									<br>
+									<input class="number" type="number" id="valor3"/>
+									<br>
+								</p>
+								<br>										
+								<input type="submit" value="SUMAR" id="submit" class="submit" />
+								<br>
+								<p id="suma">
+									Suma: <span></span>
+								</p>
+							</form>
+						</div>
+						<div id="calculo">
+							<div id="titulo4">Ahorro total</div>
+							<form action="#" method="POST" id="ahorro" onsubmit="return false;">
+								<p>
+									<br>
+									<label for="tasa:">Tasa de ahorro mensual en pesos:</label>
+									<input class="number" type="number" id="tasa"/>
+									<br>
+								</p>
+								<p>
+									<label for="tiempo:">Tiempo estimado de ahorro en años:</label>
+									<input class="number" type="number" id="tiempo"/>
+									<br>
+								</p>
+								<br>
+								<input type="submit" value="CALCULAR" id="submit" class="submit" />
+								<br>
+								<p id="total">
+									Total: <span></span>
+								</p>	
+							</form>
+						</div>				
+				</div>
+
+				<!-- Barra del costado-->
+				<aside id="sidebar">						
+					<div id="about">					
+						<h4>Sobre esta calculadora</h4>
+						<p>Esta calculadora fue mi primer pequeño proyecto, no sólo de JavaScript, sino de deasrrollo en general. Fue lo primero intenté hacer al entrar en contacto con el mundo de la tecnología. Me apoyé en las herramientas que obtuve mediante un curso intoductorio que realicé en aquel momento (año 2020). 
+						<br>Si bien tiene varios puntos a mejorar, lo comparto como un recuerdo de mi primer paso en este camino que decidí continuar recorriendo.				
+						</p>
+						<br><br>
+						<h4>Otros Proyectos</h4>
+						<p>Algunos de mis trabajos se encuentran en mi perfil de GitHub, al cual se puede llegar desde la sección de <a href="#footer">contacto</a> de esta web, o bien haciendo click <a href="https://github.com/DPinto90">aquí</a>.				
+						</p>
+					</div>									
+				</aside>
+
+				<!-- div celarfix -->
+				<div class="clearfix"></div>
+			</section>		
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<h3>ENCONTRAME EN LAS REDES</h3>
+			<ul>
+				<li><a href="https://www.linkedin.com/in/daniela-pinto-818982137/"><img src="img/linkedin.png"></a></li>
+				<li><a href="https://github.com/DPinto90"><img src="img/GitHub.png"></a></li>
+			</ul>
+			<h3>CONTACTAME</h3>
+			<p>DANIELAFPINTO90@GMAIL.COM</p>
+			<a href="#" class="subir">Volver al comienzo</a>
+		</footer>
+	</body>
+</html>
