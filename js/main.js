@@ -12,7 +12,6 @@ $(document).ready(function(){/*con esto no necesito poner el addEventLiestener '
   	var posts = [
   		{
   			title: "Sobre mí",
-  			date: "Última vez actualizado: " + moment("2022072219", "YYYYMMDDh").fromNow(),
   			content: "Me llamo Daniela Pinto y soy estudiante de programación en búsqueda del primer empleo IT. Actualmente estoy cursando la Tecnicatura Universitaria en Programación en la Universidad Tecnológica Nacional (UTN). Paralelamente, me encuentro realizando cursos de desarrollo web, a fin de complementar y enriquecer mi formación académica. </br> Soy una persona entusiasta, apasionada por el conocimiento y motivada por la curiosidad, que disfruta de los desafíos, del trabajo en equipo y de aprender cosas nuevas."
   		},
   	];
@@ -21,7 +20,7 @@ $(document).ready(function(){/*con esto no necesito poner el addEventLiestener '
   		var post = `
   			<article class="post">
   			<h2>${item.title}</h2>
-  			<span class="date">${item.date}</span>
+  			
   			<p>
   				${item.content}
   			</p>
